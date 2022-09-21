@@ -9,7 +9,7 @@ class <?php echo $bundleClassName; ?> extends Bundle
     /**
     * Overridden to allow for the custom extension alias.
     */
-    public function getContainerExtension()
+    public function getContainerExtension(): ?ExtensionInterface
     {
         if (null === $this->extension) {
             $this->extension = new <?php echo $bundleExtensionName; ?>();
