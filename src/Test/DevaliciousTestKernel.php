@@ -8,6 +8,7 @@ use Symfony\Component\Config\Loader\LoaderInterface;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Kernel;
+use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;
 use TallmanCode\DevaliciousBundle\TallmanCodeDevaliciousBundle;
 
 class DevaliciousTestKernel extends Kernel implements CompilerPassInterface
@@ -18,6 +19,14 @@ class DevaliciousTestKernel extends Kernel implements CompilerPassInterface
     {
         $defn = $container->getDefinition('devalicious.commands.make_bundle');
         $defn->setPublic(true);
+    }
+
+    protected function configureRoutes(RoutingConfigurator $routes)
+    {
+    }
+
+    protected function configureRouting(RoutingConfigurator $routes)
+    {
     }
 
     protected function configureContainer(ContainerBuilder $container, LoaderInterface $loader)
