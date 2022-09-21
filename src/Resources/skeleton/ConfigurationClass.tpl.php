@@ -1,5 +1,5 @@
 <?php echo "<?php\n"; ?>
-namespace <?php echo $bundleNameSpace; ?>;
+namespace <?php echo $bundleNameSpace; ?>\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
