@@ -64,16 +64,6 @@ jobs:
                 with:
                     dependency-versions: "${{ matrix.dependency-versions }}"
 
-            -   name: "Composer install php-cs-fixer"
-                uses: "ramsey/composer-install@v1"
-                with:
-                    composer-options: "--no-scripts --working-dir=tools/php-cs-fixer"
-
-            -   name: "Composer install twigcs"
-                uses: "ramsey/composer-install@v1"
-                with:
-                    composer-options: "--no-scripts --working-dir=tools/twigcs"
-
             -   name: "Install PHPUnit"
                 run: vendor/bin/simple-phpunit install
 
