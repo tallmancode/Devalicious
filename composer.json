@@ -1,6 +1,6 @@
 {
     "description": "A collection of handy developer tools for Symfony projects.",
-    "name": "tallmancode/devaliciousbundle",
+    "name": "tallmancode/devalicious",
     "license": "MIT",
     "type": "symfony-bundle",
     "keywords": ["generator", "code generator", "symfony bundles"],
@@ -18,13 +18,13 @@
         "symfony/deprecation-contracts": "^2.2 | ^3.0",
         "symfony/http-kernel": "^5.4.7 | ^6.0",
         "symfony/console": "^5.4.7 | ^6.0",
-        "symfony/filesystem": "^5.4.7|^6.0"
+        "symfony/filesystem": "^5.4.7 | ^6.0"
     },
     "require-dev": {
         "symfony/phpunit-bridge": "^5.4.7 | ^6.1",
         "symfony/polyfill-php80": "^1.16.0",
-        "symfony/process": "^5.4.7|^6.0",
-        "symfony/yaml": "^5.4.3|^6.0"
+        "symfony/process": "^5.4.7 | ^6.0",
+        "symfony/yaml": "^5.4.7 | ^6.0"
     },
     "autoload": {
         "psr-4": {
