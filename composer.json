@@ -1,13 +1,9 @@
 {
+    "description": "A collection of handy developer tools for Symfony projects.",
     "name": "tallmancode/devaliciousbundle",
-    "autoload": {
-        "psr-4": {
-            "TallmanCode\\DevaliciousBundle\\": "src/",
-            "TallmanCode\\DevaliciousBundle\\Tests\\": "tests/"
-        }
-    },
     "license": "MIT",
     "type": "symfony-bundle",
+    "keywords": ["generator", "code generator", "symfony bundles"],
     "authors": [
         {
             "name": "Tallmancode",
@@ -15,13 +11,29 @@
         }
     ],
     "require": {
-        "php": ">=7.2.5",
+        "php": ">=8.0",
+        "symfony/framework-bundle" : "^4.4 | ^5.0 | ^6.0",
         "symfony/config": "^4.4 | ^5.0 | ^6.0",
         "symfony/dependency-injection": "^4.4 | ^5.0 | ^6.0",
         "symfony/deprecation-contracts": "^2.2 | ^3.0",
-        "symfony/http-kernel": "^4.4 | ^5.0 | ^6.0"
+        "symfony/http-kernel": "^4.4 | ^5.0 | ^6.0",
+        "symfony/console": "^5.4.7|^6.0",
+        "symfony/filesystem": "^5.4.7|^6.0"
     },
     "require-dev": {
-        "symfony/phpunit-bridge": "^6.0"
+        "symfony/phpunit-bridge": "^6.1",
+        "symfony/polyfill-php80": "^1.16.0",
+        "symfony/process": "^5.4.7|^6.0",
+        "symfony/yaml": "^5.4.3|^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "TallmanCode\\DevaliciousBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TallmanCode\\DevaliciousBundle\\Tests\\": "tests/"
+        }
     }
 }
