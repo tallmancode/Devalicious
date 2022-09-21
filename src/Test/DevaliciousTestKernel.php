@@ -21,11 +21,7 @@ class DevaliciousTestKernel extends Kernel implements CompilerPassInterface
         $defn->setPublic(true);
     }
 
-    protected function configureRoutes(RoutingConfigurator $routes)
-    {
-    }
-
-    protected function configureRouting(RoutingConfigurator $routes)
+    protected function configureRoutes(RoutingConfigurator $routes): void
     {
     }
 
